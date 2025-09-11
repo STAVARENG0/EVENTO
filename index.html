@@ -228,6 +228,14 @@ footer{text-align:center;padding:26px 18px 40px;color:var(--text-soft);}
 }
 
 
+
+header.container .card.hero {
+  margin-bottom: 32px; /* mesmo espaçamento dos outros cards */
+}
+header.container {
+  padding-bottom: 0; /* evita espaço extra entre header e main */
+}
+
 </style>
 </head>
 <body>
@@ -334,26 +342,28 @@ footer{text-align:center;padding:26px 18px 40px;color:var(--text-soft);}
 </section>
 
   
-  <div class="cta" id="inscricao">
-    <div style="max-width:720px; margin:0 auto 26px; text-align:center; line-height:1.55">
-      <p><b>Vagas limitadas!</b> Queremos um encontro personalizado, especial, onde cada mulher receba atenção única. 
-      Por isso, as vagas são extremamente limitadas. Compras com antecedência têm <b>20% de desconto!</b></p>
-      <p>Essa é sua oportunidade de viver mais leve, como uma pessoa melhor, seja por você mesma ou pelas pessoas que você ama!</p>
-      <h2 class="section-title">Inscreva-se agora e garanta seu lugar</h2>
-      
-      <form style="margin-top:18px; text-align:left; background:rgba(0,0,0,.28); padding:18px; border-radius:14px; border:1px solid rgba(247,200,80,.24); display:inline-block">
-        <label>Nome:<br><input type="text" name="nome" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
-        <label>E-mail:<br><input type="email" name="email" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
-        <label>Telefone:<br><input type="tel" name="telefone" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
-        <label>Pergunta: Qual área da sua vida você mais deseja transformar?<br>
-          <textarea name="transformacao" rows="3" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:14px"></textarea>
-        </label><br>
-        <div style="text-align:center">
-          <button type="submit" class="btn-gold">Inscreva-se</button>
-        </div>
-      </form>
-    </div>
+  <section class="card" id="inscricao">
+    <p><b>Vagas limitadas!</b> Queremos um encontro personalizado, especial, onde cada mulher receba atenção única. 
+    Por isso, as vagas são extremamente limitadas. Compras com antecedência têm <b>20% de desconto!</b></p>
+    <p>Essa é sua oportunidade de viver mais leve, como uma pessoa melhor, seja por você mesma ou pelas pessoas que você ama!</p>
+  </section>
 
+  <section class="card">
+    <h2 class="section-title">Inscreva-se agora e garanta seu lugar</h2>
+    <form style="margin-top:18px; text-align:left;">
+      <label>Nome:<br><input type="text" name="nome" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
+      <label>E-mail:<br><input type="email" name="email" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
+      <label>Telefone:<br><input type="tel" name="telefone" required style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px"></label><br>
+      <label>Pergunta: Qual área da sua vida você mais deseja transformar?<br>
+        <textarea name="transformacao" rows="3" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; margin-bottom:14px"></textarea>
+      </label><br>
+      <div style="text-align:center">
+        <button type="submit" class="btn-gold">Inscreva-se</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="cta">
     <a href="#inscricao">Quero Despertar Meu Poder Feminino</a>
   </div>
 </main>
